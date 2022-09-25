@@ -58,32 +58,28 @@
             <ul class="navbar-nav">
               
                 <li class=" nav-item">
-                    <a id="home" class=" nav-link  " href="#" role="button" >Home</a>
+                    <a id="home" class=" nav-link  " href="index.html" role="button" >Home</a>
                   </li>
     
     
                   
                   <li class=" nav-item">
-                    <a id="features" class=" nav-link  " href="#" role="button" >Features</a>
+                    <a id="features" class=" nav-link  " href="#services" role="button" onclick="scrollFunctionServices()" >Our Services</a>
                   </li>
 
 
 
-              <li class="hs-has-sub-menu nav-item">
-                <a id="serviceMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " href="#" role="button" aria-expanded="false">Services</a>
-                <!-- Mega Menu -->
-                <div class="hs-sub-menu dropdown-menu" aria-labelledby="serviceMegaMenu" style="min-width: 14rem;">
-                  <a class="dropdown-item " href="./portfolio-grid.html">Service 1</a>
-                  <a class="dropdown-item " href="./portfolio-product-article.html">Service 2</a>
-                  <a class="dropdown-item " href="./portfolio-case-studies-branding.html">Service 3</a>
-                  <a class="dropdown-item " href="./portfolio-case-studies-product.html">Service 4</a>
-                </div>
-                <!-- End Mega Menu -->
-              </li>
-              <!-- End Portfolio -->
+
+                  <li class=" nav-item">
+                    <a id="contact" class=" nav-link  " href="#mission" role="button" onclick="scrollFunctionMission()" >Mission</a>
+                  </li>      
+                  <li class=" nav-item">
+                    <a id="contact" class=" nav-link  " href="#whychooseus" role="button" onclick="scrollFunctionWhyChooseUs()">Why Choose Us</a>
+                  </li> 
+
 
               <li class=" nav-item">
-                <a id="contact" class=" nav-link  " href="#" role="button" >Contact</a>
+                <a id="contact" class=" nav-link  " href="#contactus" role="button" onclick="scrollFunctionContactUs()" >Contact Us</a>
               </li> 
 
               
@@ -112,7 +108,7 @@
           <div class="row">
             <div class="col-lg-5">
               <div class="mb-5">
-                <h2 class="display-4 mb-3">
+                <h5 class="display-5 mb-3"><br>
                   Turn your property into a
 
                   <span class="text-primary text-highlight-warning">
@@ -125,9 +121,13 @@
                             "backDelay": 2500
                           }'></span>
                   </span>
-                </h2>
+                </h5>
                 
-                <p class="lead">A perfect platform designed for Landlord and property management  </p>
+                <p class="lead">Do you know your unit's condition while it's being rented out? <br></p>
+                <p class="card-text"> How can you be sure that your property remains well-maintained during the tenancy period ?</p>
+                <p class="card-text">For a small fee. Doorcares will have your property properly checked for you. And this investment may well save you further expenses, later !</p>
+
+
               </div>
 
               <div class="d-grid d-sm-flex gap-3">
@@ -145,7 +145,7 @@
         <div class="col-lg-7 col-xl-6 d-none d-lg-block position-absolute top-0 end-0 pe-0" style="margin-top: 6.75rem;">
  
 
-          <img src="dist/assets/img/hero.jpg" alt="" width = "90%" height = "390px ">
+          <img src="dist/assets/img/hero.jpg" alt="" width = "90%" height = "488px ">
 
 
         </div>
@@ -155,10 +155,10 @@
     <!-- End Hero -->
 
     <!-- Card Grid -->
-    <div class="container content-space-2 content-space-t-xl-3 content-space-b-lg-3">
+    <div class="container content-space-2 content-space-t-xl-3 content-space-b-lg-3" id = "ourServicesSection">
       <!-- Heading -->
       <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5">
-        <h2>Features</h2>
+        <h2>Our Services</h2>
       </div>
       <!-- End Heading -->
 
@@ -254,7 +254,7 @@
               <ul class="list-pointer mb-0">
                 <li class="list-pointer-item">Evaluating the property’s condition
                 </li>
-                <li class="list-pointer-item">Comprehensive records compiled and submitted to the landlord/owner</li>
+                <li class="list-pointer-item">Compiling and submitting comprehensive records to the landlord or owner</li>
               </ul>
               <!-- End List Pointer -->
             </div>
@@ -271,29 +271,77 @@
 
 
 
+<!-- Features -->
+<div class="overflow-hidden">
+  <div class="container content-space-t-2 content-space-t-lg-3 content-space-b-lg-2">
+    <div class="row justify-content-lg-between align-items-lg-center">
+      <div class="col-lg-5 mb-9 mb-lg-0">
+        <!-- Heading -->
+        <div class="mb-4">
+          <h2>Why Regular Check</h2>
+          <p>As a landlord, why should your rental property undergo regular inspection</p>
+        </div>
+        <!-- End Heading -->
+
+        <!-- List Checked -->
+        <ul class="list-checked list-checked-soft-bg-dark list-checked-lg">
+          <li class="list-checked-item"> Regular checks are important, in monitoring the condition of your units. This can potentially increase your income, save you time and reduce hassle during the tenancy period.</li>
+          <li class="list-checked-item">Periodic checks ensure that your property is being properly maintained througout the rental period.</li>
+          <li class="list-checked-item">Regular checks prevent damagas and defects from worsening, if left unnoticed and unchecked .</li>
+        </ul>
+        <!-- End List Checked -->
+      </div>
+      <!-- End Col -->
+
+      <div class="col-lg-6">
+        <div class="position-relative mx-auto" data-aos="fade-up">
+          <!-- Mobile Device -->
+          <figure class="device-mobile mx-auto">
+            <div class="device-mobile-frame">
+              <img class="device-mobile-img" src="dist/assets/img/407x867/img1.jpg" alt="Image Description">
+            </div>
+          </figure>
+          <!-- End Mobile Device -->
+
+          <!-- SVG Shape -->
+          <div class="position-absolute top-50 start-50 translate-middle zi-n1" style="width: 25rem;">
+            <img class="img-fluid" src="dist/assets/svg/components/shape-4.svg" alt="SVG">
+          </div>
+          <!-- End SVG Shape -->
+        </div>
+      </div>
+      <!-- End Col -->
+    </div>
+    <!-- End Row -->
+  </div>
+</div>
+<!-- End Features -->
+
+
+
     <!-- Info -->
   
-    <div class="container content-space-2 content-space-lg-3">
+    <div class="container content-space-2 content-space-lg-3" id = "missionSection">
       <div style = "text-align:center; padding:5%;">
-        <h2>Doorcares's Mission</h2>
+        <h2>Our Mission</h2>
       </div>
       
 
       <div class="row justify-content-lg-between">
         
-        <div class="col-lg-4 mb-5 mb-lg-0">
-          <br><br><br>
-          <div style = "text-align:center; margin-left:90px;">
-            <img src="dist/assets/img/dc-logo.png" alt="" >
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          <br>
+          <div>
+            <img src="dist/assets/svg/illustrations/oc-building-apps.svg" width = "90%"  alt="">
           </div>
           
 
         </div>
         <!-- End Col -->
 
-        <div class="col-lg-6">
-          <p>Our mission is simple: We help landlords to check their rented properties thoroughly when tenants move-in and move-out, and in-between, we conduct interim checks too. It is our strong belief that these checks, when done properly and professionally, eventually lead to a smoother and more hassle-free tenancy. Let Doorcares be your eyes and ears, as we specialize in checking and identifying all matters pertinent to your valued properties! </p>
-          <p>Our audits culminate in a documentation of our observations in easily understandable reports, supported by records and photos. Enjoy peace of mind with Doorcares, knowing that your properties and possessions are properly accounted for, and that you are well updated on their conditions. All of these, done without you having to be physically present, thus saving you time and hassle.</p>
+        <div class="col-lg-7 "><br>
+          <p class="card-text ">Our mission is simple. We help landlords to check their rented properties thoroughly when tenants move-in and move-out, and in-between, we conduct interim checks too. It is our strong belief that these checks, when done properly and professionally, eventually lead to a smoother and more hassle-free tenancy. Let Doorcares be your eyes and ears, as we specialize in checking and identifying all matters pertinent to your valued properties! </p>
+          <p class="card-text">Our audits culminate in a documentation of our observations in easily understandable reports, supported by records and photos. Enjoy peace of mind with Doorcares, knowing that your properties and possessions are properly accounted for, and that you are well updated on their conditions. All of these, done without you having to be physically present, thus saving you time and hassle.</p>
 
         </div>
         <!-- End Col -->
@@ -306,9 +354,12 @@
    
 
  <!-- Icon Blocks -->
- <div class="container content-space-t-2 content-space-t-lg-3">
+ <div class="container content-space-t-2 content-space-t-lg-3" id = "whyChooseUsSection">
     <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5">
-        <h2>Why we are better ?</h2>
+        <h2>Why choose us?</h2>
+
+        <p>Why Doorcares is your rental property inspector of choice</p>
+      
       </div>
     <div class="row justify-content-lg-center">
 
@@ -318,15 +369,15 @@
           <div class="flex-shrink-0">
             <span class="svg-icon text-primary">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6 21C6 21.6 6.4 22 7 22H17C17.6 22 18 21.6 18 21V20H6V21Z" fill="#035A4B"/>
-              <path opacity="0.3" d="M17 2H7C6.4 2 6 2.4 6 3V20H18V3C18 2.4 17.6 2 17 2Z" fill="#035A4B"/>
-              <path d="M12 4C11.4 4 11 3.6 11 3V2H13V3C13 3.6 12.6 4 12 4Z" fill="#035A4B"/>
-              </svg>
+                <path opacity="0.3" d="M3 6C2.4 6 2 5.6 2 5V3C2 2.4 2.4 2 3 2H5C5.6 2 6 2.4 6 3C6 3.6 5.6 4 5 4H4V5C4 5.6 3.6 6 3 6ZM22 5V3C22 2.4 21.6 2 21 2H19C18.4 2 18 2.4 18 3C18 3.6 18.4 4 19 4H20V5C20 5.6 20.4 6 21 6C21.6 6 22 5.6 22 5ZM6 21C6 20.4 5.6 20 5 20H4V19C4 18.4 3.6 18 3 18C2.4 18 2 18.4 2 19V21C2 21.6 2.4 22 3 22H5C5.6 22 6 21.6 6 21ZM22 21V19C22 18.4 21.6 18 21 18C20.4 18 20 18.4 20 19V20H19C18.4 20 18 20.4 18 21C18 21.6 18.4 22 19 22H21C21.6 22 22 21.6 22 21ZM16 11V9C16 6.8 14.2 5 12 5C9.8 5 8 6.8 8 9V11C7.2 11 6.5 11.7 6.5 12.5C6.5 13.3 7.2 14 8 14V15C8 17.2 9.8 19 12 19C14.2 19 16 17.2 16 15V14C16.8 14 17.5 13.3 17.5 12.5C17.5 11.7 16.8 11 16 11ZM13.4 15C13.7 15 14 15.3 13.9 15.6C13.6 16.4 12.9 17 12 17C11.1 17 10.4 16.5 10.1 15.7C10 15.4 10.2 15 10.6 15H13.4Z" fill="#035A4B"/>
+                <path d="M9.2 12.9C9.1 12.8 9.10001 12.7 9.10001 12.6C9.00001 12.2 9.3 11.7 9.7 11.6C10.1 11.5 10.6 11.8 10.7 12.2C10.7 12.3 10.7 12.4 10.7 12.5L9.2 12.9ZM14.8 12.9C14.9 12.8 14.9 12.7 14.9 12.6C15 12.2 14.7 11.7 14.3 11.6C13.9 11.5 13.4 11.8 13.3 12.2C13.3 12.3 13.3 12.4 13.3 12.5L14.8 12.9ZM16 7.29998C16.3 6.99998 16.5 6.69998 16.7 6.29998C16.3 6.29998 15.8 6.30001 15.4 6.20001C15 6.10001 14.7 5.90001 14.4 5.70001C13.8 5.20001 13 5.00002 12.2 4.90002C9.9 4.80002 8.10001 6.79997 8.10001 9.09997V11.4C8.90001 10.7 9.40001 9.8 9.60001 9C11 9.1 13.4 8.69998 14.5 8.29998C14.7 9.39998 15.3 10.5 16.1 11.4V9C16.1 8.5 16 8 15.8 7.5C15.8 7.5 15.9 7.39998 16 7.29998Z" fill="#035A4B"/>
+                </svg>
+
 
             </span>
           </div>
           <div class="flex-grow-1 ms-4">
-            <h4>Responsive</h4>
+            <h4>Unbiased & Independent </h4>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla!</p>
           </div>
         </div>
@@ -339,16 +390,16 @@
         <div class="d-flex ps-lg-5" data-aos="fade-up" data-aos-delay="100">
           <div class="flex-shrink-0">
             <span class="svg-icon text-primary">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="dist/assets/vendor/duotone-icons/abs/abs028.svg">
-              <path d="M17.5 11H6.5C4 11 2 9 2 6.5C2 4 4 2 6.5 2H17.5C20 2 22 4 22 6.5C22 9 20 11 17.5 11ZM15 6.5C15 7.9 16.1 9 17.5 9C18.9 9 20 7.9 20 6.5C20 5.1 18.9 4 17.5 4C16.1 4 15 5.1 15 6.5Z" fill="#035A4B"/>
-              <path opacity="0.3" d="M17.5 22H6.5C4 22 2 20 2 17.5C2 15 4 13 6.5 13H17.5C20 13 22 15 22 17.5C22 20 20 22 17.5 22ZM4 17.5C4 18.9 5.1 20 6.5 20C7.9 20 9 18.9 9 17.5C9 16.1 7.9 15 6.5 15C5.1 15 4 16.1 4 17.5Z" fill="#035A4B"/>
-              </svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M19 22H5C4.4 22 4 21.6 4 21V3C4 2.4 4.4 2 5 2H14L20 8V21C20 21.6 19.6 22 19 22ZM15 17C15 16.4 14.6 16 14 16H8C7.4 16 7 16.4 7 17C7 17.6 7.4 18 8 18H14C14.6 18 15 17.6 15 17ZM17 12C17 11.4 16.6 11 16 11H8C7.4 11 7 11.4 7 12C7 12.6 7.4 13 8 13H16C16.6 13 17 12.6 17 12ZM17 7C17 6.4 16.6 6 16 6H8C7.4 6 7 6.4 7 7C7 7.6 7.4 8 8 8H16C16.6 8 17 7.6 17 7Z" fill="#035A4B"/>
+                <path d="M15 8H20L14 2V7C14 7.6 14.4 8 15 8Z" fill="#035A4B"/>
+                </svg>
               
             </span>
           </div>
           <div class="flex-grow-1 ms-4">
-            <h4>Cost-Effective</h4>
-            <p>Front template can be easily customized with its cutting-edge components and features.</p>
+            <h4>Comprehensive Reports</h4>
+            <p>Comprehensive reports that document current conditions with supporting documents</p>
           </div>
         </div>
         <!-- End Icon Blocks -->
@@ -362,16 +413,18 @@
         <div class="d-flex pe-lg-5" data-aos="fade-up" data-aos-delay="200">
           <div class="flex-shrink-0">
             <span class="svg-icon text-primary">
+  
+
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M4 4L11.6314 2.56911C11.875 2.52343 12.125 2.52343 12.3686 2.56911L20 4V11.9033C20 15.696 18.0462 19.2211 14.83 21.2313L12.53 22.6687C12.2057 22.8714 11.7943 22.8714 11.47 22.6687L9.17001 21.2313C5.95382 19.2211 4 15.696 4 11.9033L4 4Z" fill="#035A4B"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M11.175 14.75C10.9354 14.75 10.6958 14.6542 10.5042 14.4625L8.58749 12.5458C8.20415 12.1625 8.20415 11.5875 8.58749 11.2042C8.97082 10.8208 9.59374 10.8208 9.92915 11.2042L11.175 12.45L14.3375 9.2875C14.7208 8.90417 15.2958 8.90417 15.6792 9.2875C16.0625 9.67083 16.0625 10.2458 15.6792 10.6292L11.8458 14.4625C11.6542 14.6542 11.4146 14.75 11.175 14.75Z" fill="#035A4B"/>
-              </svg>
+                <path opacity="0.3" d="M22 12C22 17.5 17.5 22 12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2C17.5 2 22 6.5 22 12ZM12 7C10.3 7 9 8.3 9 10C9 11.7 10.3 13 12 13C13.7 13 15 11.7 15 10C15 8.3 13.7 7 12 7Z" fill="#035A4B"/>
+                <path d="M12 22C14.6 22 17 21 18.7 19.4C17.9 16.9 15.2 15 12 15C8.8 15 6.09999 16.9 5.29999 19.4C6.99999 21 9.4 22 12 22Z" fill="#035A4B"/>
+                </svg>
 
             </span>
           </div>
           <div class="flex-grow-1 ms-4">
-            <h4>Verified Property Manager</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla!</p>
+            <h4>Expert Support</h4>
+            <p>Our team of  "checkers & inspectors " come from diverse fields, expertise and backgrounds, ensuring the right experience and skillset for proper audits  </p>
           </div>
         </div>
         <!-- End Icon Blocks -->
@@ -391,9 +444,9 @@
             </span>
           </div>
           <div class="flex-grow-1 ms-4">
-            <h4>Verified Property Manager</h4>
+            <h4>Feature 4</h4>
 
-            <p>Every component and plugin is well documented with live examples.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, voluptates.</p>
           </div>
         </div>
         <!-- End Icon Blocks -->
@@ -409,7 +462,7 @@
     <div class="container content-space-2 content-space-lg-3">
       <!-- Heading -->
       <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5">
-        <h2>Discover more</h2>
+        <h2>Discover more (optional)</h2>
       </div>
       <!-- End Heading -->
 
@@ -473,10 +526,10 @@
     <!-- End Card Grid -->
 
 
-    <div class="position-relative bg-img-start" style="background-image: url(dist/assets/svg/components/card-11.svg);">
+    <div class="position-relative bg-img-start" style="background-image: url(dist/assets/svg/components/card-11.svg);" id = "contactUsSection">
         <div class="container content-space-t-3 content-space-b-2 position-relative zi-2">
           <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
-            <h2>Contact us</h2>
+            <h2>Contact us (optional)</h2>
             <p>We'd love to talk about how we can help you.</p>
           </div>
   
@@ -598,9 +651,9 @@
 
           <!-- List -->
           <ul class="list-unstyled list-py-1">
-            <li><a class="link-sm link-secondary" href="#"><i class="bi-geo-alt-fill me-1"></i> Block D-1-8 Pusat Perdagangan Kuchai
-              No 2 Jalan 1/127
-              58200 Kuala Lumpur</a></li>
+            <li><a class="link-sm link-secondary" href="#"><i class="bi-geo-alt-fill me-1"></i>BO1-A-09, Menara 2, 
+              KL Eco City, 3, Jalan Bangsar
+              59200 Kuala Lumpur </a></li>
             <li><a class="link-sm link-secondary" href="tel:1-062-109-9222"><i class="bi-telephone-inbound-fill me-1"></i> +6 016-6687263</a></li>
           </ul>
           <!-- End List -->
@@ -778,7 +831,7 @@
   <script src="dist/assets/vendor/aos/dist/aos.js"></script>
   <script src="dist/assets/vendor/typed.js/lib/typed.min.js"></script>
   <script src="dist/assets/vendor/swiper/swiper-bundle.min.js"></script>
-
+  <script src="dist/assets/vendor/fslightbox/index.js"></script>
   <!-- JS Front -->
   <script src="dist/assets/js/theme.min.js"></script>
 
@@ -879,16 +932,50 @@
   </script>
 
 
+
 <script>
-    
-    $("#signupFormButton").click(function(){  
-  $("#signupForm").submit();
-}
+        function scrollFunctionServices() {
+        let e = document.getElementById("ourServicesSection");
+        e.scrollIntoView({
+          block: 'start',
+          behavior: 'smooth',
+          inline: 'start'
+        });
+      }
 
 
-$("#loginFormButton").click(function(){  
-  $("#loginForm").submit();
-}
+
+      function scrollFunctionWhyChooseUs() {
+        let e = document.getElementById("whyChooseUsSection");
+        e.scrollIntoView({
+          block: 'start',
+          behavior: 'smooth',
+          inline: 'start'
+        });
+      }
+
+
+      function scrollFunctionContactUs() {
+        let e = document.getElementById("contactUsSection");
+        e.scrollIntoView({
+          block: 'start',
+          behavior: 'smooth',
+          inline: 'start'
+        });
+      }
+
+
+      function scrollFunctionMission() {
+        let e = document.getElementById("missionSection");
+        e.scrollIntoView({
+          block: 'start',
+          behavior: 'smooth',
+          inline: 'start'
+        });
+      }
+      
+      
 </script>
+
 </body>
 </html>
