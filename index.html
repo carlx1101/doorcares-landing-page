@@ -22,6 +22,68 @@
 
   <!-- CSS Front Template -->
   <link rel="stylesheet" href="dist/assets/css/theme.min.css">
+
+  <style>
+    .hidePrice3 {
+  display: none;
+}
+
+.hoverPrice3:hover + .hidePrice3 {
+  display: block;
+  color: red;
+}
+
+
+.hidePrice1 {
+  display: none;
+}
+
+.hoverPrice1:hover + .hidePrice1 {
+  display: block;
+  color: red;
+}
+
+
+.hidePrice2 {
+  display: none;
+}
+
+.hoverPrice2:hover + .hidePrice2 {
+  display: block;
+  color: red;
+}
+
+
+
+.hideTitle1 {
+  display: none;
+}
+
+.hoverTitle1:hover + .hideTitle1 {
+  display: block;
+  color: red;
+}
+
+
+.hideTitle2 {
+  display: none;
+}
+
+.hoverTitle2:hover + .hideTitle2 {
+  display: block;
+  color: red;
+}
+
+
+.hideTitle3 {
+  display: none;
+}
+
+.hoverTitle3:hover + .hideTitle3 {
+  display: block;
+  color: red;
+}
+  </style>
 </head>
 
 <body>
@@ -37,7 +99,7 @@
       <nav class="js-mega-menu navbar-nav-wrap">
         <!-- Default Logo -->
         <a class="navbar-brand" href="./index.html" aria-label="Front">
-          <img class="navbar-brand-logo" src="dist/assets/img/dc.png" alt="Logo" style = "max-width: 100%; height: auto; width: 80%;">
+          <img class="navbar-brand-logo" src="dist/assets/img/dc.png" alt="Logo" style = "max-width: 100%; height: auto; width: 60%;">
         </a> 
         <!-- End Default Logo -->
 
@@ -106,7 +168,7 @@
         <!-- Heading -->
         <div class="w-100">
           <div class="row">
-            <div class="col-lg-5">
+            <div class="col-lg-6">
               <div class="mb-5" >
                 <h6 class="display-5 mb-3" style = "padding-bottom: 5%;"><br>
                   Property check will help you save
@@ -114,7 +176,7 @@
                   <span class=" text-highlight-warning" style = "color: #97d4d5;">
                     <span class="js-typedjs"
                           data-hs-typed-options='{
-                            "strings": ["Expenses", "Hassle", "Maintenance","Time"],
+                            "strings": ["expenses", "hassle", "maintenance","time"],
                             "typeSpeed": 90,
                             "loop": true,
                             "backSpeed": 30,
@@ -146,9 +208,9 @@
         <!-- End Title & Description -->
 
         <!-- SVG Shape -->
-        <div class="col-lg-7 col-xl-6 d-none d-lg-block position-absolute top-0 end-0 pe-0" style="margin-top: 6.75rem;">
+        <div class="col-lg-6 col-xl-6 d-none d-lg-block position-absolute top-0 end-0 pe-0" style="margin-top: 6.75rem;">
 
-          <img src="dist/assets/img/hero.jpg" alt="" width = "85%" height = "488px " style="border-radius: 1%;">
+          <img src="dist/assets/img/hero.jpg" alt="" width = "75%" height = "450px " style="border-radius: 1%;">
 
 
         </div>
@@ -176,8 +238,12 @@
             </div>
 
             <div class="card-body">
-              <h4 class="card-title">Moving-Out</h4>
-              <p class="card-text text-muted ">RM300  </p>
+              <h4 class="hoverTitle1 card-title">Moving-Out</h4>
+              <p class="hideTitle1 text-danger" style="text-align: justify; font-size: 15px;"><i class="bi bi-info-circle"></i>  This excludes costs and fees for actual work done by contractors</p>
+
+              <p class="hoverPrice1 card-text text-muted ">RM300  </p>
+              <p class="hidePrice1 text-danger"style="text-align: justify;  font-size: 15px;"><i class="bi bi-info-circle"></i>  1,000 sq ft and below</p>
+
               <!-- <p class="card-text" style="text-align: justify;">Arrangement and coordination fees for sourcing contractors and quotations </p> -->
 
               <!-- List Pointer -->
@@ -192,8 +258,6 @@
                 <li class="list-pointer-item" style="text-align: justify;">Comprehensive records compiled and submitted to the owner</li>
                 <li class="list-pointer-item" style="text-align: justify;">Tabulating outstanding charges for water, electricity, gas and sewage</li>
                 <li class="list-pointer-item" style="text-align: justify;">Getting quotation for repair or maintenance works</li><br>
-                <li class="text-danger" style="text-align: justify; font-size: 15px;"><i class="bi bi-info-circle"></i>  This excludes costs and fees for actual work done by contractors</li>
-                <li class="text-danger"style="text-align: justify;  font-size: 15px;"><i class="bi bi-info-circle"></i>  1,000 sq ft and below </li>
 
                 
               </ul>
@@ -214,8 +278,13 @@
             </div>
 
             <div class="card-body">
-              <h4 class="card-title">Moving-In</h4>
-              <p class="card-text text-muted"> RM300  </p>
+              <h4 class="hoverTitle2 card-title">Moving-In</h4>
+              <p class="hideTitle2 text-danger"style="text-align: justify;  "><i class="bi bi-info-circle"></i>  This excludes costs and fees for actual work done by contractors </p>
+
+              <p class="hoverPrice2 card-text text-muted"> RM300  </p>
+              <p class="hidePrice2 text-danger"style="text-align: justify;  font-size: 15px;"><i class="bi bi-info-circle"></i>  1,000 sq ft and below</p>
+
+              
               <!-- <p class="card-text" style="text-align: justify;">Arrangement and coordination fees for sourcing contractors and quotations</p> -->
 
               <!-- List Pointer -->
@@ -225,8 +294,6 @@
                 <li class="list-pointer-item"style="text-align: justify;">Tabulating outstanding charges for water, electricity, gas and sewage </li>
                 <li class="list-pointer-item"style="text-align: justify;">Getting quotation for repair or maintenance works</li>
   
-                <li class="text-danger"style="text-align: justify;  "><i class="bi bi-info-circle"></i>  This excludes costs and fees for actual work done by contractors </li>
-                <li class="text-danger"style="text-align: justify; "><i class="bi bi-info-circle"></i>  1,000 sq ft and below </li>
               </ul>
               <!-- End List Pointer -->
             </div>
@@ -241,12 +308,16 @@
           <!-- Card -->
           <div class="card card-sm h-100">
             <div class="p-2">
-              <img class="card-img" src="dist/assets/img/credit.jpg" alt="Image Description" width = "80%" >
+              <img class="card-img" src="dist/assets/img/credit.jpeg" alt="Image Description" width = "80%" >
             </div>
 
             <div class="card-body">
-              <h4 class="card-title">Interim Checks</h4>
-              <p class="card-text text-muted"> RM150</p>
+              <h4 class="hoverTitle3 card-title">Interim Checks</h4>
+              <p class="hideTitle3 text-danger" style="text-align: justify;  font-size: 15px;"><i class="bi bi-info-circle"></i>  This excludes costs and fees for actual work done by contractors</p>
+
+              <p class="hoverPrice3 card-text text-muted"> RM150</p>             
+               <p class="hidePrice3 text-danger"style="text-align: justify;  font-size: 15px;"><i class="bi bi-info-circle"></i>  1,000 sq ft and below</p>
+
               <!-- <p class="card-text" style="text-align: justify;">On-site inspection fees</p> -->
 
               <!-- List Pointer -->
@@ -255,9 +326,8 @@
                 <li class="list-pointer-item" style="text-align: justify;">Compiling and submitting comprehensive records to the owner</li>
                 <li class="list-pointer-item" style="text-align: justify;">Following up with Tenant on work done, if any</li>
                 <li class="list-pointer-item" style="text-align: justify;">Getting quotation for repair or maintenance works</li><br><br>
-                <li class="text-danger" style="text-align: justify;  font-size: 15px;"><i class="bi bi-info-circle"></i>  This excludes costs and fees for actual work done by contractors</li>
 
-                <li class="text-danger"style="text-align: justify;  font-size: 15px;"><i class="bi bi-info-circle"></i>  1,000 sq ft and below </li>
+                <li > </li>
 
               </ul>
               <!-- End List Pointer -->
@@ -420,7 +490,7 @@
         <!-- End Col -->
 
         <div class="col-lg-7 " style = "text-align: justify;"><br>
-          <h4>Doorcares...because we care about your property, like you do!</h4><br>
+         <p style = "font-size: 18px;"><i>" Doorcares&nbsp;...&nbsp;because we care about your property, like you do! "</i></p>
           <p class="card-text ">Our mission is simple. We help landlords to check their rented properties thoroughly when tenants move-in and move-out, and in-between, we conduct interim checks too.&nbsp; It is our strong belief that these checks, when done properly and professionally, eventually lead to a smoother and more hassle-free tenancy.&nbsp;Let Doorcares be your eyes and ears, as we specialize in checking and identifying all matters pertinent to your valued properties! </p>
           <p class="card-text">Our audits culminate in a documentation of our observations in easily understandable reports, supported by records and photos.   &nbsp;Enjoy peace of mind with Doorcares, knowing that your properties and possessions are properly accounted for, and that you are well updated on their conditions.&nbsp;All of these, done without you having to be physically present, thus saving you time and hassle.</p>
 
@@ -439,7 +509,7 @@
     <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5">
         <h2>Why choose us?</h2>
 
-        <p>Why Doorcares is your rental property inspector of choice</p>
+        <p>Doorcares is your rental property inspector of choice</p>
       
       </div><br><br>
     <div class="row justify-content-lg-center">
@@ -599,8 +669,8 @@
           <!-- List -->
           <ul class="list-unstyled list-py-1">
             <li><a class="link-sm link-secondary" href="#"><i class="bi-geo-alt-fill me-1"></i>BO1-A-09, Menara 2, 
-              KL Eco City, &nbsp; No 3, Jalan Bangsar,<br>
-              59200 Kuala Lumpur. </a></li>
+              KL Eco City, &nbsp;&ensp;&nbsp;&nbsp;&nbsp; No 3, Jalan Bangsar,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;59200 Kuala Lumpur. </a></li>
             <li><a class="link-sm link-secondary" href="tel:1-062-109-9222"><i class="bi-telephone-inbound-fill me-1"></i> +6 016-6687263</a></li>
           </ul>
           <!-- End List -->
@@ -609,12 +679,12 @@
         <!-- End Col -->
 
         <div class="col-sm mb-7 mb-sm-0">
-          <h5 class="mb-3">Company</h5>
+          <h5 class="mb-3">Quick Link</h5>
 
           <!-- List -->
           <ul class="list-unstyled list-py-1 mb-0">
             <li><a class="link-sm link-secondary" href="#">Home</a></li>
-            <!-- <li><a class="link-sm link-secondary" href="#">Our Services </a></li> -->
+            <li><a class="link-sm link-secondary" href="#">Our Services </a></li>
             <li><a class="link-sm link-secondary" href="#">Our Mission</a></li>
             <li><a class="link-sm link-secondary" href="#">Why choose Us <i class="bi-box-arrow-up-right small ms-1"></i></a></li>
             <li><a class="link-sm link-secondary" href="#">Contact us</a></li>
@@ -630,82 +700,7 @@
 
       <div class="row mb-7">
         <div class="col-sm mb-3 mb-sm-0">
-          <!-- Socials -->
-          <ul class="list-inline list-separator mb-0">
-            <li class="list-inline-item">
-              <a class="text-body" href="#">Privacy &amp; Policy</a>
-            </li>
-            <li class="list-inline-item">
-              <a class="text-body" href="#">Terms</a>
-            </li>
-            <li class="list-inline-item">
-              <a class="text-body" href="#">Site Map</a>
-            </li>
-          </ul>
-          <!-- End Socials -->
-        </div>
-
-        <div class="col-sm-auto">
-          <!-- Socials -->
-          <ul class="list-inline mb-0">
-            <li class="list-inline-item">
-              <a class="btn btn-soft-secondary btn-xs btn-icon" href="#">
-                <i class="bi-facebook"></i>
-              </a>
-            </li>
-          
-            <li class="list-inline-item">
-              <a class="btn btn-soft-secondary btn-xs btn-icon" href="#">
-                <i class="bi-google"></i>
-              </a>
-            </li>
-          
-            <li class="list-inline-item">
-              <a class="btn btn-soft-secondary btn-xs btn-icon" href="#">
-                <i class="bi-twitter"></i>
-              </a>
-            </li>
-          
-            <li class="list-inline-item">
-              <a class="btn btn-soft-secondary btn-xs btn-icon" href="#">
-                <i class="bi-github"></i>
-              </a>
-            </li>
-          
-            <li class="list-inline-item">
-              <!-- Button Group -->
-              <div class="btn-group">
-                <button type="button" class="btn btn-soft-secondary btn-xs dropdown-toggle" id="footerSelectLanguage" data-bs-toggle="dropdown" aria-expanded="false" data-bs-dropdown-animation>
-                  <span class="d-flex align-items-center">
-                    <img class="avatar avatar-xss avatar-circle me-2" src="dist/assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="Image description" width="16"/>
-                    <span>English (US)</span>
-                  </span>
-                </button>
-
-                <div class="dropdown-menu" aria-labelledby="footerSelectLanguage">
-                  <a class="dropdown-item d-flex align-items-center active" href="#">
-                    <img class="avatar avatar-xss avatar-circle me-2" src="dist/assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="Image description" width="16"/>
-                    <span>English (US)</span>
-                  </a>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                    <img class="avatar avatar-xss avatar-circle me-2" src="dist/assets/vendor/flag-icon-css/flags/1x1/de.svg" alt="Image description" width="16"/>
-                    <span>Deutsch</span>
-                  </a>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                    <img class="avatar avatar-xss avatar-circle me-2" src="dist/assets/vendor/flag-icon-css/flags/1x1/es.svg" alt="Image description" width="16"/>
-                    <span>Español</span>
-                  </a>
-                  <a class="dropdown-item d-flex align-items-center" href="#">
-                    <img class="avatar avatar-xss avatar-circle me-2" src="dist/assets/vendor/flag-icon-css/flags/1x1/cn.svg" alt="Image description" width="16"/>
-                    <span>中文 (繁體)</span>
-                  </a>
-                </div>
-              </div>
-              <!-- End Button Group -->
-            </li>
-          </ul>
-          <!-- End Socials -->
-        </div>
+  
       </div>
 
       <!-- Copyright -->
